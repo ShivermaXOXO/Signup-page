@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizzas.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="heart">
+        <i class="fas fa-regular fa-heart"></i>
+    </div>
+    <div class="container">
+        <img src="imag/pizzaimg.png" class="image" id="pizzaImg">
+
+        <div class="pieces">
+
+            <img src="imag/pizza1.png" id="pepcut">
+            <img src="imag/pizza2.png" id="mushcut">
+            <img src="imag/pizza3.png" id="brocut">
+            <img src="imag/pizza4.png" id="tomcut">
+            <img src="imag/pizza5.png" id="checut">
+        </div>
+    </div>
+    <h2 id="pizzaTitle">The Pepperoni Perfection</h2>
+    <p>Pepperoni Cheese Pizza:Savor the timeless delight of our<br> pizza featuring savory Pepperoni an gooey
+        mozzarella<br> cheese,all on a prefectely baked crust.</p>
+    <div class="btn" id="btns">
+        <button onclick="enlargeImage('S')">S</button>
+        <button onclick="enlargeImage('M')">M</button>
+        <button onclick="enlargeImage('L')">L</button>
+
+    </div>
+    <div class="incred">
+        <div class="logo" onclick="showPiece('pepcut','Pizza Napoletana',500)">
+            <img src="imag/pizza1.png" alt="pepper" id="pper">
+            <p>Pizza <br>Napoletana</p>
+        </div>
+        <div class="logo" onclick="showPiece('mushcut','Pizza Margherita',600)">
+            <img src="imag/pizza2.png" alt="mushroom" id="mush">
+            <p>Pizza <br>Margherita</p>
+        </div>
+        <div class="logo" onclick="showPiece('brocut','Pizza bufalina',650)">
+            <img src="imag/pizza3.png" alt="broccoli" id="broc">
+            <p>Pizza <br>bufalina</p>
+        </div>
+        <div class="logo" onclick="showPiece('tomcut','Pizzette',550)">
+            <img src="imag/pizza4.png" alt="tomato" id="tomat">
+            <p>Pizzette</p>
+        </div>
+        <div class="logo" onclick="showPiece('checut','Pizza alla diavola',630)">
+            <img src="imag/pizza5.png" alt="cheese" id="chese">
+            <p>Pizza <br>alla diavola</p>
+        </div>
+    </div>
+    <div class="basket">
+
+        <p><i class="fas fa-solid fa-clipboard"></i><span id="rupees">Rs 500.0</span> | ADD TO BASKET</p>
+    </div>
+    <script src="pizzas.js"></script>
+</body>
+
+</html>

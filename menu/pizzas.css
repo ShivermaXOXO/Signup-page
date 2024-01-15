@@ -1,0 +1,111 @@
+.image {
+    height: 195px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    display: block;
+}
+
+h2 {
+
+    text-align: center;
+    margin-top: 80px;
+}
+
+p {
+    text-align: center;
+
+}
+
+.btn {
+
+    text-align: center;
+}
+
+.btn button {
+    border-radius: 50%;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.container {
+    position: relative;
+    text-align: center;
+
+}
+
+.image {
+
+
+    transition: transform 0.5s ease;
+    clip-path: circle(90px);
+}
+
+.logo img {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 40px;
+    background-color: rgb(222, 225, 225);
+
+}
+
+#btns button {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.incred {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+    margin-top: 4%;
+
+}
+
+
+#tomat,
+#broc,
+#pper,
+#mush,
+#chese {
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-right: 20px;
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
+}
+
+.fas {
+    margin-right: 5px;
+
+}
+
+.basket {
+    margin: auto;
+    width: 50%;
+    border: 2px solid #920202;
+    border-radius: 10px;
+}
+
+.heart {
+    float: right;
+    margin-top: -50px;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+
+.heart i.clicked {
+    color: red;
+}
+
+.pieces {
+    display: none;
+}
