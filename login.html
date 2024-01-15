@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Login">
+        <div class="container">
+            <h1>Login</h1> 
+            <h3>Enter your login credentials</h3> 
+            <form action="">
+                <div class="field"> 
+                <label for="first" class="uname" style="color: aquamarine"><i class="fa fa-user"></i>
+                      Username: 
+                  </label> 
+                <input type="text" 
+                       id="Username"
+                       name="first" 
+                       placeholder="Enter your Username" required>
+                    </div> 
+                <div class="pass"> 
+                    <div class="field"> 
+                <label for="password" class="psw" style="color: aquamarine;"><i class="fa fa-lock"></i>  
+                      Password: 
+                  </label> 
+                
+                <input type="password"
+                       id="password" 
+                       name="password" 
+                       placeholder="Enter your Password" required>
+                       <img src="eye-close.png" onclick="pass()" class="eye-icon" id="eye-icon">
+                       
+                    </div>
+                </div>
+                <div class="wrap"> 
+                    <button type="submit"
+                            onclick="(solve)" id="loginBtn" > 
+                        Login 
+                    </button> 
+                </div> 
+            </form> 
+            <div id="loginMessage"></div>
+            <p>Not registered?  
+                  <a href="#" 
+                   style="text-decoration: none;"> 
+                   <a href="createacc.html"> Create an account</a> 
+                </a> 
+            </p> 
+            <div class="or">Or</div>
+            
+            <div class="icon-button"> 
+                <span class="facebook"><i class="fa fa-facebook"></i>  Facebook</span>
+                <span class="Google"><i class="fa fa-google"></i>  Google</span>
+             </div>
+        </div>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>

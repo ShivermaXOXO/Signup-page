@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(40, 26, 9);
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the navbar */
+.navbar {
+    background-color: #E12127; 
+    /* color: #fff; /* White text */
+    /* padding: 10px 0; */ 
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; */
+    padding: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #050b3e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}
+.logo img{
+    height: 29px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 480px) {
+    .logo img {
+        width: 50px; /* Adjust the size of the logo image for smaller screens */
+    }
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+
+.centered {
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    /* width: 100%;
+    height: auto; You can adjust the height or remove this line */
+    display: inline-block;
+}
+
+.image-container img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 400px) and (max-height:700px){
+    .image-container img{
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+.text-overlay{
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.text-overlay p{
+    /* position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(244, 243, 242);
+    /* background-color: rgba(0, 0, 0, 0.5); Add a semi-transparent background */
+    /* padding: 10px 20px; Add padding to the text */
+    font-size: 30px;
+    margin: 0;
+    margin-top: 60px;
+    line-height: 1.5;
+}
+
+.text-overlay p{
+    /* position: absolute;
+    top: 40%;
+    left: 12%;
+    font-size: 30px;
+    color: rgb(241, 233, 233); */
+    font-size: 20px;
+    margin: 10px 0;
+}
+.bottom{
+    /* position: absolute;
+    top: 55%;
+    left: 12%;
+    font-size:40px;
+    color: blue; */
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 39px;
+}
+
+@media only screen and (max-width: 768px) {
+    .text-overlay p {
+        font-size: 20px;
+    }
+
+    .text-overlay li {
+        font-size: 14px;
+    }
+
+    .bottom {
+        font-size: 16px;
+    }
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 480px) {
+    .text-overlay p {
+        font-size: 18px;
+    }
+
+    .text-overlay p {
+        font-size: 12px;
+    }
+
+    .bottom {
+        font-size: 14px;
+    }
+}
+
